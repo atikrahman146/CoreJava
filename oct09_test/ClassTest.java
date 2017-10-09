@@ -3,22 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package oct08_IO;
+package oct09_test;
 
 /**
  *
  * @author J2EE-33
  */
-public class TestArgs {
+
+public class ClassTest extends ClassOne {
 
     public static void main(String[] args) {
-        args = new String[3];
-        args[0] = "1";
-        args[1] = "2";
-        args[2] = "3";
+        char a = new ClassOne().getVar();
+        char b = new ClassTest().getVar();
         
-        for (int i = 0; i < args.length; i++) {
-            System.out.println("Args[" + i + "] is '" + args[i] + "'");
-        }
     }
 }

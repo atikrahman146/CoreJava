@@ -18,6 +18,13 @@ public class ArrayCreate {
         int z[] = new int[2];
         int[] p = {1, 2, 3};
 
+        //Array declaration another way
+        args = new String[3];
+        args[0] = "1";
+        args[1] = "2";
+        args[2] = "3";
+        
+        
         //Two dimentional array
         int[][] array2d = new int[2][3];
         array2d[0][0] = 1;
