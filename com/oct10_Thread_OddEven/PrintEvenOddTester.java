@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.oct10_Thread;
+package com.oct10_Thread_OddEven;
 /**
  *
  * @author J2EE-33
