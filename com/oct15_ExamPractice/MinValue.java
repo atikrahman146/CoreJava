@@ -12,6 +12,7 @@ import java.util.Scanner;
  * @author J2EE-33
  */
 public class MinValue {
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter Number:");
@@ -21,7 +22,7 @@ public class MinValue {
         arr[1] = sc.nextInt();
         arr[2] = sc.nextInt();
 
-        System.out.println("Min number:" + getMaxValue(arr));
+        System.out.println("Min number:" + getMin(arr));
     }
 
     public static int getMaxValue(int[] args) {
@@ -32,5 +33,15 @@ public class MinValue {
             }
         }
         return minVal;
+    }
+
+    public static int getMin(int[] args) {
+        int a = args[0];
+        for (int i = 0; i < args.length; i++) {
+            if (args[i] < a) {
+                a = args[i];
+            }
+        }
+        return a;
     }
 }

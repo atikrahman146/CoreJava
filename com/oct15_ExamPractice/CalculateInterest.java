@@ -37,14 +37,4 @@ public class CalculateInterest {
         return interest;
     }
     
-    public static int getMinValue(int[] args) {
-        int minVal = args[0];
-        for (int i = 1; i < args.length; i++) {
-            if (args[i]< minVal) {
-                minVal = args[i];
-            }
-        }
-        return minVal;
-    }
-
 }
