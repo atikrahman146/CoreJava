@@ -18,13 +18,14 @@ public class EmailValidation {
         System.out.println("Enter email: ");
         String email = sc.nextLine();
 
-        int dotpos = email.indexOf(".");
-        int atpos = email.indexOf("@");
+        int dotp = email.indexOf(".");
+        int atp = email.indexOf("@");
 
-        if (atpos > 1 && (dotpos - atpos) > 2) {
+        if (atp > 1 && (dotp - atp) > 2) {
             System.out.println("Email is valid");
         } else {
             System.out.println("Email is invalid");
         }
+
     }
 }

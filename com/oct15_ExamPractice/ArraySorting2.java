@@ -15,27 +15,22 @@ import java.util.Scanner;
 public class ArraySorting2 {
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int[][] n = new int[2][3];
-
+        Scanner scn = new Scanner(System.in);
+        int[][] num = new int[2][3];
+        
         System.out.println("Row 1");
         System.out.println("Enter number");
-        n[0][0] = sc.nextInt();
-        System.out.println("Enter number");
-        n[0][1] = sc.nextInt();
-        System.out.println("Enter number");
-        n[0][2] = sc.nextInt();
-
+        num[0][0] = scn.nextInt();
+        num[0][1] = scn.nextInt();
+        num[0][2] = scn.nextInt();
+        
         System.out.println("Row 2");
         System.out.println("Enter number");
-        n[1][0] = sc.nextInt();
-        System.out.println("Enter number");
-        n[1][1] = sc.nextInt();
-        System.out.println("Enter number");
-        n[1][2] = sc.nextInt();
-
-        System.out.println("Data table");
-        sortingArray(n);
+        num[1][0] = scn.nextInt();
+        num[1][1] = scn.nextInt();
+        num[1][2] = scn.nextInt();
+        
+        sortingArray(num);
     }
 
     public static void sortingArray(int[][] n) {

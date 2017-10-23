@@ -5,7 +5,8 @@
  */
 package com.oct15_ExamPractice;
 
-import java.util.Arrays;
+import java.util.*;
+import static java.util.Collections.list;
 
 /**
  *
@@ -16,13 +17,19 @@ public class ArraySort {
     static int[][] a = {{10, 15, 12}, {84, 14, 54}};
 
     public static void main(String[] args) {
-        for (int[] d : a) {
-            Arrays.sort(d);
 
-            for (int n : d) {
-                System.out.print(n + " ");
+        sortingArray(a);
+
+    }
+
+    public static void sortingArray(int[][] args) {
+        for (int[] aa : args) {
+            Arrays.sort(aa);
+            for (int b : aa) {
+
+                System.out.print(b + " " );
             }
+            System.out.println();
         }
-        System.out.println();
     }
 }
